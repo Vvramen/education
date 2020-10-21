@@ -1,7 +1,9 @@
 function sum(a, b) {
-  //Напиши свой код здесь
+  return a + b;
 };
 
+let result = sum(1, 2);
+alert(result)
 window.sum = sum;
 
 export default sum;
