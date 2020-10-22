@@ -1,5 +1,5 @@
 function sumCheck(a, b) {
-  // Напиши свой код здесь
+  return(+a + +b);
 }
 
 window.sumCheck = sumCheck;

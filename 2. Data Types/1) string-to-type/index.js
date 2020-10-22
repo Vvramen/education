@@ -11,16 +11,14 @@ function stringToType(str) {
       case 'undefined':
           return undefined;
       case 'false':
-          return  false
+          return  false;
       case 'true':
           return true;
       case '0':
           return 0;
-      defauilt:
+      default:
           return(str);
           break;
-
-  }
 
   }
 };
