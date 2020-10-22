@@ -3,5 +3,4 @@ function sum(a, b) {
 };
 
 window.sum = sum;
-
 export default sum;

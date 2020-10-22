@@ -5,4 +5,4 @@ function isOdd(a) {
     return false;
 }
 
-export default isOdd;
+

@@ -6,5 +6,4 @@ function sumCheck(a, b) {
 }
 
 window.sumCheck = sumCheck;
-
 export default sumCheck;

@@ -8,5 +8,4 @@ function factorial(n) {
 }
 
 window.factorial = factorial;
-
 export default factorial;

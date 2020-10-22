@@ -16,5 +16,4 @@ function basicCalc(operation, a, b) {
   }
 }
 window.basicCalc = basicCalc;
-
 export default basicCalc;
