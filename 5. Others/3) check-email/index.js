@@ -13,7 +13,9 @@
  */
 
 function isValidEmail(email) {
-  // Напиши свой код здесь
+    // Напиши свой код здесь
+    const reg = /^([a-z0-9_\-\.])+@[a-z]+\.(ru|com)/i;
+    return reg.test(email);
 }
 
 window.isValidEmail = isValidEmail;
