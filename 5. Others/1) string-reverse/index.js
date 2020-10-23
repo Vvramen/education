@@ -1,3 +1,9 @@
+
+function stingReverse() {
+    return this.split("").reverse().join("");
+}
+
+String.prototype.reverse = stingReverse;
 /*
   Задача:
   Добавить функции метод reverse, который будет переворачивать строку на оборот
