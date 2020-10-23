@@ -8,8 +8,28 @@
  */
 
 class TokenService {
-  // Напиши свой код здесь
+    constructor() {
+        this.token = null;
+        this.subs = [];
+    }
+    subscribe(callback) {
+        this.subs.push(callback);
+    }
+    setToken() {
+        this.token = newToken;
+        console.log(newToken);
+        this.subs.forEach((sub) => sub(this.token));
+    }
+    getToken() {
+        console.log(this.token);
+        return this.token();
+    }
+    removeToken() {
+        this.token = null;
+        this.subs.forEach((sub) => sub(this.token));
+    }
 }
+
 
 window.TokenService = TokenService;
 
