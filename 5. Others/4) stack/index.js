@@ -18,9 +18,34 @@
  */
 
 class Stack {
-  // Напиши свой код здесь
+    constructor() {
+        this.arr = []
+        this.size = this.arr.length;
+    }
+
+    push(a) {
+        this.arr.push(a);
+        this.size = this.arr.length;
+        return this
+    }
+
+    pop() {
+        if (!this.isEmpty()) {
+            this.arr.pop();
+            this.size = this.arr.length;
+            return this;
+        }
+        throw new Error("Empty!:");
+    }
+
+    isEmpty() {
+        return this.size === 0;
+    }
+
+    print() {
+        return `[${this.arr.join(", ")}]`;
+    }
 }
 
 window.Stack = Stack;
-
 export default Stack;
